@@ -20,6 +20,7 @@ use super::{
 };
 use crate::{log, network_service, platform::PlatformRef, runtime_service, util};
 
+use crate::alloc::borrow::ToOwned;
 use alloc::{borrow::Cow, boxed::Box, format, string::String, sync::Arc, vec::Vec};
 use core::{cmp, iter, num::NonZero, pin::Pin, time::Duration};
 use futures_channel::oneshot;
